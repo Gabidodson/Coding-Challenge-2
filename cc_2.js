@@ -46,6 +46,9 @@ const totals1 = bills1.map((bill, index) => bill + tips1[index]);
 //Data set 2
 const bills2 = [125, 555, 44];
 const tips2 = bills2.map(bill=>calculatedtip(bill));
+const totals2 = bills2.map((bill, index) => bill + tips1[index]);
+
+//Output for Data set 1
 console.log("Test Data set 1:",totals1);
 bills1.forEach((bill, index) => {
     console.log(`Bill:$${bill}, Tip: $${tips1[index]}, Total: $${totals1[index]}`);
